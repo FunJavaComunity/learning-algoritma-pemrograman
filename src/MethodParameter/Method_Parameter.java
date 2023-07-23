@@ -8,25 +8,27 @@ public class Method_Parameter {
     }
 
     //method parameter
+    public static void penjumlahan(int angka) {
+        System.out.println(2 * angka + angka);
+    }
+    /** Bentuk matematika
+     *  F(a)= 2 x a + a
+     *  F(3)= 2 x 3 + 3
+     *  F(3)= 9
+     */
+
     public static void sapa(String nama) {
         System.out.println("Hi! nama Saya, " + nama );
-    }
-
-    public static void pesan(int porsi, String makanan) {
-        System.out.println("Saya pesan, " + porsi + " porsi " + makanan);
     }
 
     //psvm merupakan tempat eksekusi method
     public static void main(String[] args) {
 
-        //Menampilkan method tanpa parameter
-        hai();
-
         //Menampilkan output method dengan parameter
         sapa("Juna");
         sapa("Ali");
-        sapa("Yanto");
 
-        pesan(2, "Nasi Goreng");
+        //penjumlahan(3);
+
     }
 }
