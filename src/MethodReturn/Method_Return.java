@@ -2,30 +2,22 @@ package MethodReturn;
 
 public class Method_Return {
 
-    //method tanpa parameter
-    public static void Contoh1() {
-        System.out.println("Hi!");
+    // void method
+    public static void Contoh1(int angka1, int angka2){
+        int hasil;
+        hasil = angka1 + angka2;
+        System.out.println(hasil);
     }
 
-    //method parameter
-    public static void Contoh2(int nama) {
-        System.out.println(nama + " buah Apel");
-    }
-
-    //method return
-    public static int Contoh3(int angka1, int angka2){
-
-        int hasil = angka1 + angka2;
-
+    // return method
+    public static int Contoh2(int angka1, int angka2){
+        int hasil;
+        hasil = angka1 + angka2;
         return hasil;
     }
 
     public static void main(String[] args) {
-
-
-        Contoh1();
-        Contoh2(4);
-        System.out.println(Contoh3(23, 12));
-
+        Contoh1(23, 12);//pemanggilan void method
+        System.out.println(Contoh2(23, 12));//pemanggilan return method
     }
 }
